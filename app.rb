@@ -1,3 +1,4 @@
+#app.rb
 require 'sinatra'
 require 'rest-client'
 require 'json'
@@ -26,8 +27,7 @@ get '/search' do
         key: ENV['YOUTUBE_API_KEY'],
         q: query,
         part: 'snippet',
-        type: 'channel',
-        maxResults: 10
+        type: 'channel'
       }
     )
 

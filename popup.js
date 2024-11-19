@@ -87,11 +87,9 @@ document.addEventListener('DOMContentLoaded', () => {
                  class="channel-thumbnail">
             <div class="channel-info">
                 <h3>${channel.title || 'Untitled Channel'}</h3>
-                <p class="description">${channel.description || 'No description available'}</p>
                 <p class="stats">
                     ${formatNumber(channel.subscribers)} subscribers 
                     • ${formatNumber(channel.video_count)} videos
-                    • ${formatNumber(channel.view_count)} views
                 </p>
                 <div class="channel-actions">
                     <a href="https://youtube.com/channel/${channel.channel_id}" 
